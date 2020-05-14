@@ -1,0 +1,28 @@
+<html>
+<script>
+function godkend()
+{
+g=document.getElementById("cars").value;
+if(g==2)
+{
+  alert("Vi dværge er farlige på kort afstand - vi løber ikke!!");
+  window.open("index.html");
+}
+
+}
+</script>
+
+<h1>Velkommen til ESCAPE-ROOM'et <i>POWER TO THE PEOPLE</i></h1>
+<p>
+Rum 4: Du møder en mærkelig fyr, der spørger dig,
+<form>
+<label for="cars">Hvilken af disse personer er en DVÆRG?</label>
+  <select id="cars" name="cars">
+    <option value="1">Frodo</option>
+    <option value="2">Gimli</option>
+    <option value="3">Aragon</option>
+    <option value="4">Gollum</option>
+  </select>
+<button onclick="godkend()">Send svar!</button>
+</form>
+</html>
